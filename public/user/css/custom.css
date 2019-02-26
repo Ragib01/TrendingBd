@@ -1,0 +1,223 @@
+.ps-brand {
+    position: relative;
+    padding-bottom: 70px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+
+.ps-brand .ps-brand__thumbnail {
+    position: relative;
+    z-index: 100; }
+.ps-brand .ps-brand__thumbnail img {
+    width: 100%; }
+.ps-brand .ps-brand__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; }
+.ps-brand .ps-brand__content {
+    display: block;
+    position: absolute;
+    padding: 10px 0 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+.ps-brand .ps-brand__variants {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    z-index: 10003;
+    min-height: 70px;
+    max-height: 70px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+    transform: translateY(-100px); }
+.ps-brand .ps-brand__variants .ps-brand__variant {
+    padding: 0 25px;
+    margin-bottom: 10px; }
+.ps-brand .ps-brand__variants .ps-brand__variant .owl-nav {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    height: 0;
+    width: 100%; }
+.ps-brand .ps-brand__variants .ps-brand__variant .owl-nav::after {
+    clear: both;
+    content: "";
+    display: table; }
+.ps-brand .ps-brand__variants .ps-brand__variant .owl-prev, .ps-brand .ps-brand__variants .ps-brand__variant .owl-next {
+    display: inline-block;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+.ps-brand .ps-brand__variants .ps-brand__variant .owl-next {
+    float: right; }
+.ps-brand .ps-brand__variant img:hover {
+    cursor: pointer; }
+.ps-brand .ps-brand__detail {
+    margin-bottom: 0;
+    position: relative;
+    min-height: 60px;
+    background-color: #fff; }
+.ps-brand .ps-brand__name {
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #5b5b5b;
+    line-height: 1.4em; }
+.ps-brand .ps-brand__name:hover {
+    color: #2AC37D; }
+.ps-brand .ps-brand__categories {
+    margin-bottom: 0; }
+.ps-brand .ps-brand__categories > a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    color: #8d8d8d; }
+.ps-brand .ps-brand__categories > a:hover {
+    color: #2AC37D; }
+.ps-brand .ps-brand__price {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 20px;
+    color: #5b5b5b; }
+.ps-brand .ps-brand__price del {
+    font-size: 16px;
+    color: #bcbcbc; }
+.ps-brand .ps-brand__favorite {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 35px;
+    height: 35px;
+    z-index: 10000;
+    background-color: #4d4d4d;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transform: scale(0, 0);
+    -moz-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    transform: scale(0, 0); }
+
+.ps-brand .ps-brand__favorite.active, .ps-brand .ps-brand__favorite:hover {
+    background-color: #2AC37D; }
+.ps-brand .br-theme-fontawesome-stars .br-widget {
+    margin-bottom: 0; }
+.ps-brand:hover:before {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1); }
+.ps-brand:hover .ps-brand__thumbnail {
+    z-index: 10000;
+}
+.ps-brand:hover .ps-brand__content {
+    padding-top: 30px;
+    bottom: -3px;
+    max-height: none;
+    opacity: 1;
+}
+.ps-brand:hover .ps-brand__variants {
+    visibility: visible;
+    opacity: .5;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); }
+.ps-brand:hover .ps-brand__favorite {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1); }
+@media (max-width: 1199px) {
+    .ps-brand:before {
+        display: none; } }
+@media (max-width: 767px) {
+    .ps-brand {
+        max-width: 480px;
+        margin: 0 auto; } }
+
+.ps-brand--sidebar {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -moz-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    margin-bottom: 10px; }
+.ps-brand--sidebar .ps-brand__thumbnail {
+    position: relative;
+    width: 85px; }
+.ps-brand--sidebar .ps-brand__thumbnail a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; }
+.ps-brand--sidebar .ps-brand__content {
+    padding-left: 15px; }
+.ps-brand--sidebar .ps-brand__content p {
+    margin-bottom: 15px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500; }
+.ps-brand--sidebar .ps-brand__content p del {
+    color: #8a8a8a;
+    font-size: 13px; }
+.ps-brand--sidebar .ps-brand__title {
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #626262;
+    text-transform: uppercase; }
+.ps-brand--sidebar .ps-brand__title:hover {
+    color: #2AC37D; }
+.ps-brand--sidebar .ps-btn {
+    padding: 6px 20px 4px;
+    font-size: 12px;
+    line-height: 15px; }
+
+.ps-brands--carousel {
+    padding: 5px 6px 0px; }
