@@ -448,7 +448,7 @@
         <div class="ps-column" style="width: 100%;"><a class="ps-offer" href=""><img src="http://skytheme.epizy.com/skytheme/images/slider/3.jpg" alt="" style="width: 100%;"></a></div>
     </div>
 
-    <div class="ps-section ps-section--top-sales ps-owl-root pt-10 pb-10">
+    <div class="ps-section ps-section--top-sales ps-owl-root pt-10 pb-10">n
         <div class="ps-container">
             <div class="ps-section__header mb-0">
                 <div class="row">
